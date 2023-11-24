@@ -28,10 +28,10 @@ Para configurar e executar o projeto localmente, siga estas etapas:
 bash
 Copy code
 # Clone o repositório
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone https://github.com/todydanielm3/portfolio-website-danielmoraes.git
 
 # Entre no diretório do projeto
-cd seu-repositorio
+cd portfolio-website-danielmoraes
 
 # Instale as dependências
 npm install
