@@ -95,8 +95,8 @@ const Home = () => (
           automação de redes, e domínio de linguagens e ferramentas como Python,
           JavaScript/Node.js, C, Assembly e AWS Serverless. Construindo uma
           carreira marcada pelo compromisso com a inovação e a aplicação de
-          tecnologias de ponta em soluções práticas e eficientes. Criador de
-          conteúdo digital{' '}
+          tecnologias de ponta em soluções práticas e eficientes.Compartilho um
+          pouco da minha vidal pessoal em{' '}
           <Link
             as={NextLink}
             href="https://www.instagram.com/daniel_8moraes/"
@@ -105,8 +105,16 @@ const Home = () => (
           >
             daniel_8moraes
           </Link>
-          . Compartilho um pouco da minha vida, repleta de música, programação e
-          ciclismo!（＾ν＾）
+          e escrevo críticas de filmes no{' '}
+          <Link
+            as={NextLink}
+            href="https://letterboxd.com/daniel_8moraes/film/2001-a-space-odyssey/"
+            passHref
+            target="_blank"
+          >
+            Letterboxd
+          </Link>
+          （＾ν＾）
         </Paragraph>
         <Box align="center" my={4}>
           <Button
@@ -116,7 +124,7 @@ const Home = () => (
             rightIcon={<ChevronRightIcon />}
             colorScheme="teal"
           >
-            My portfolio
+            Meu repositório de projetos
           </Button>
         </Box>
       </Section>
@@ -180,15 +188,17 @@ const Home = () => (
           Interesses
         </Heading>
         <Paragraph>
-          Arte, Musica , Natureza{' '}
-          <Link href="https://www.instagram.com/p/CsPRIxytSm-/" target="_blank">
-            e muita programação.
-          </Link>
-          , Playing Drums,{' '}
-          <Link href="https://www.instagram.com/p/Csj1MFSvWUx/" target="_blank">
-            Photography
-          </Link>
-          , Machine Learning
+          Viajar | Arte | Música | Natureza |{' '}
+          <Link
+            href="https://letterboxd.com/daniel_8moraes/films"
+            target="_blank"
+          >
+            Filmes
+          </Link>{' '}
+          <Link
+            href="https://www.instagram.com/p/Csj1MFSvWUx/"
+            target="_blank"
+          ></Link>
         </Paragraph>
       </Section>
 
@@ -230,6 +240,14 @@ const Home = () => (
                 leftIcon={<IoLogoInstagram />}
               >
                 @daniel_8moraes
+              </Button>
+            </Link>
+          </ListItem>
+
+          <ListItem>
+            <Link href="https://letterboxd.com/daniel_8moraes/" target="_blank">
+              <Button variant="ghost" colorScheme="teal">
+                ❛❜ @Daniel8Filmes
               </Button>
             </Link>
           </ListItem>
