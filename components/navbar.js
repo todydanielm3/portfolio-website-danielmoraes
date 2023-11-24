@@ -110,10 +110,16 @@ const Navbar = props => {
                   Quem sou eu?
                 </MenuItem>
                 <MenuItem as={MenuLink} href="/works">
-                  Projetos
+                  Publicações
                 </MenuItem>
                 <MenuItem as={Link} href="https://github.com/todydanielm3">
                   Visite meu GitHub <IoLogoGithub />
+                </MenuItem>
+                <MenuItem
+                  as={Link}
+                  href="https://letterboxd.com/daniel_8moraes/"
+                >
+                  Meu Letterboxd
                 </MenuItem>
               </MenuList>
             </Menu>
