@@ -27,17 +27,14 @@ Para configurar e executar o projeto localmente, siga estas etapas:
 
 bash
 Copy code
-# Clone o repositório
-git clone https://github.com/todydanielm3/portfolio-website-danielmoraes.git
+# Clone o repositório  
+git clone https://github.com/todydanielm3/portfolio-website-danielmoraes.git  
 
-# Entre no diretório do projeto
-cd portfolio-website-danielmoraes
+# Entre no diretório do projeto  
+cd portfolio-website-danielmoraes  
 
-# Instale as dependências
-npm install
+# Instale as dependências  
+npm install  
 
-# Execute o servidor de desenvolvimento
-npm run dev
-Contribuições e Feedback
-
-Sugestões e contribuições são sempre bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
+# Execute o servidor de desenvolvimento  
+npm run dev  
