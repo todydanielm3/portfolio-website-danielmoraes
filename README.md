@@ -13,15 +13,15 @@ Three.js: Para adicionar elementos 3D interativos, dando um toque único à pág
 React: Para construir a interface de usuário com componentes reutilizáveis.
 
 Estrutura do Projeto  
-$PROJECT_ROOT
-│   # Page files
-├── pages
-│   # React component files
-├── components
-│   # Non-react modules
-├── lib
-│   # Static files for images and 3d model file
-└── public
+$PROJECT_ROOT  
+│   # Page files  
+├── pages  
+│   # React component files  
+├── components  
+│   # Non-react modules  
+├── lib  
+│   # Static files for images and 3d model file  
+└── public  
 
 Para configurar e executar o projeto localmente, siga estas etapas:
 
