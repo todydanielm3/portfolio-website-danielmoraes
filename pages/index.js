@@ -85,7 +85,7 @@ const Home = () => (
         </Heading>
         <Paragraph style={{ textAlign: 'center', margin: 0 }}>
           Engenheiro de Computação, com ampla experiência em Reconhecimento
-          Facial baseado em Inteligência Artificial e membro ativo do grupo de
+          Facial baseado em Inteligência Artificial e membro do grupo de
           pesquisa em reconhecimento facial do Departamento de Ciência da
           Computação da Universidade de Brasília. Especializado em Visão
           Computacional e Computação em Nuvem, possuo uma sólida experiência em
