@@ -107,22 +107,13 @@ const Navbar = props => {
               />
               <MenuList>
                 <MenuItem as={MenuLink} href="/">
-                  About
+                  Quem sou eu?
                 </MenuItem>
                 <MenuItem as={MenuLink} href="/works">
-                  Works
+                  Projetos
                 </MenuItem>
-                <MenuItem as={MenuLink} href="/posts">
-                  Posts
-                </MenuItem>
-                <MenuItem as={MenuLink} href="https://">
-                  Uses
-                </MenuItem>
-                <MenuItem
-                  as={Link}
-                  href="https://github.com/todydanielm3"
-                >
-                  View Source
+                <MenuItem as={Link} href="https://github.com/todydanielm3">
+                  Visite meu GitHub <IoLogoGithub />
                 </MenuItem>
               </MenuList>
             </Menu>
