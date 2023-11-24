@@ -103,7 +103,7 @@ const Home = () => (
             passHref
             target="_blank"
           >
-            daniel_8moraes
+            daniel_8moraes <br />
           </Link>
           e escrevo críticas de filmes no{' '}
           <Link
