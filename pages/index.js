@@ -46,7 +46,7 @@ const Home = () => (
             Daniel Moraes
           </Heading>
           <p>
-            ❐ Computer Engineering University of Brasilia UnB <br />
+            ❐ Computer Engineer University of Brasilia UnB <br />
             ■ BiTGroup CNPq - Recfacs Systems <br />
             ♮ ₫rummer
             <br />∯ Time is still the infinite jest
