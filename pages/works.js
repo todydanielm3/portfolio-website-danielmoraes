@@ -48,9 +48,9 @@ const Works = () => (
             thumbnail={thumbWalknote2}
             Link="https://github.com/todydanielm3/projeto_haskell"
           >
-            Implementação de filtros de imagens em Haskell. Projeto Haskell de
+            Implementação de filtros de imagens em Haskell.Projeto Haskell de
             Filtro Gaussiano: projeto em Haskell utiliza a biblioteca
-            JuicyPixels para aplicar um filtro Gaussiano em imagens. Ele é um
+            JuicyPixels para aplicar um filtro Gaussiano em imagens.
             exemplo básico de processamento de imagens usando Haskell.
           </WorkGridItem>
         </Section>
