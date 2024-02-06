@@ -80,7 +80,7 @@ const Works = () => (
           <WorkGridItem
             id="DeepFace_RecFac"
             title="DeepFace_RecFac"
-            thumbnail={thumbWalknote1}
+            thumbnail={thumbWalknote}
             link="https://github.com/todydanielm3/deepface_recfac_deg"
           >
             Modelos de Reconhecimento Facial baseado em Aprendizado Profundo
