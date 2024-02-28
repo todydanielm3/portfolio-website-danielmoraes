@@ -23,6 +23,7 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
 
 export const WorkGridItem = ({ children, id, title, thumbnail }) => (
   <Box w="100%" textAlign="center">
+    <LinkBox cursor="pointer">
       <Image
         src={thumbnail}
         alt={title}
@@ -38,7 +39,6 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => (
     </LinkBox>
   </Box>
 )
-
 export const GridItemStyle = () => (
   <Global
     styles={`
