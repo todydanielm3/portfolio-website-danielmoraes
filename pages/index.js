@@ -159,8 +159,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <Heading as="h3" variant="section-title">
             Experiências Profissionais
           </Heading>
+             <BioSection>
+            <BioYear>2024 - Present</BioYear>
+             Analista de Integração de Dados em Atenção Primária à Saúde na operadora Postal Saúde. Atuando na estruturação, 
+               análise e integração de dados de saúde para melhorar a qualidade e a eficiência dos serviços da saúde primária.
+          </BioSection>
+
           <BioSection>
-            <BioYear>2023 - Present</BioYear>
+            <BioYear>2023 - 2024</BioYear>
             Engenheiro de Dados no Instituto de Gestão Estratégica de Saúde do
             Distrito Federal (IGESDF), atuando na gestão de Informações
             Estratégicas. Responsável pelo desenvolvimento de painéis
