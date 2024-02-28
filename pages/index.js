@@ -37,7 +37,7 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Até então, continuamos sendo um fenômeno raro no universo ヽ(⌐■_■)ノ
+        Até então, continuamos sendo um fenômeno raro no universo <br />ヽ(⌐■_■)ノ
       </Box>
 
       <Box display={{ md: 'flex' }}>
