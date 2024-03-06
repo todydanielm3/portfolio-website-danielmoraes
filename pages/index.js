@@ -173,19 +173,16 @@ const Home = () => (
           </BioSection>
 
           <BioSection>
-            <BioYear>2021 - 2022</BioYear>
-            Network Security and Infrastructure Intern
+            <BioYear>2021 - 2023</BioYear>
+            Network Security and Infrastructure Intern - CLDF
             <br />
-            Responsável pela documentação detalhada e configuração eficiente da
-            infraestrutura de rede da organização, incluindo a gestão de
-            servidores, racks e switches, garantindo robustez e eficiência
-            operacional. • Liderança técnica na migração da infraestrutura de
-            rede legada para a solução avançada da Fortinet, ampliando
-            significativamente minha expertise em configuração e integração de
-            redes complexas. • Participação ativa na migração de recursos de
-            aplicativos para ambientes de nuvem, empregando Docker e Kubernetes,
-            demonstrando habilidade na otimização de recursos e na implementação
-            de soluções de cloud computing eficazes.
+            Estágio em segurança e infraestrutura de redes, contribuí para a modernização da infraestrutura de rede. 
+            Meu trabalho envolveu a documentação técnica e reconfiguração de sistemas legados, incluindo a gestão de servidores, 
+            salas de rede, racks e switches. Destaco minha participação na substituição e configuração de switches antigos pelos avançados switches da Fortinet, 
+            melhorando a segurança e desempenho da rede.
+            Adquiri experiência prática em tecnologias de rede complexas, especialmente na integração de equipamentos Fortinet à infraestrutura existente. 
+            Além disso, colaborei com a equipe de desenvolvimento na migração de aplicações para a nuvem, otimizando recursos e empregando soluções eficazes de cloud computing. 
+            A orquestração de contêineres com Docker e Kubernetes foi uma área chave, aprofundando meu conhecimento em automação e escalabilidade de aplicações.
           </BioSection>
         </Section>
       </Section>
