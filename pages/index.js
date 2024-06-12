@@ -115,7 +115,7 @@ const Home = () => (
           >
             Letterboxd
           </Link>
-          （＾ν＾）
+          <br />（＾ν＾）
         </Paragraph>
         <Box align="center" my={4}>
           <Button
