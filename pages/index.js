@@ -153,8 +153,10 @@ const Home = () => (
           </Heading>
             <BioSection>
             <BioYear>2/2024 - Present</BioYear>
-             Engenheiro de IA Deep Learning - WaveLight Health Technologies <br/>
-            Google Inception V3 | Engenheiro de IA especializado em Deep Learning, atuando na análise de sinais vitais através de PPG remoto. 
+             Engenheiro de IA Deep Learning <br/> 
+          | WaveLight Health Technologies |<br/>
+          | Google Inception V3|<br/> 
+            Engenheiro de IA especializado em Deep Learning, atuando na análise de sinais vitais através de PPG remoto. 
               Colaborando para a construção de infraestrutura backend, pipelines de dados e modelos de deep learning para produtos suportados por IA. 
                 Identificação de oportunidades inovadoras para aplicação de IA em diferentes áreas do produto, e implementar novos recursos para resolver problemas complexos em análise de sinaisEngenheiro de IA especializado em Deep Learning, atuando na análise de sinais vitais através de PPG remoto. 
               Colaborando para a construção de infraestrutura backend, pipelines de dados e modelos de deep learning para produtos suportados por IA. Identificação de oportunidades inovadoras para aplicação de IA em diferentes áreas do produto, 
