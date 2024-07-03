@@ -48,7 +48,7 @@ const Home = () => (
           </Heading>
           <p>
             ❐ Computer Engineer University of Brasilia UnB <br />
-            ■ BiTGroup CNPq - Recfacs Systems <br />
+            ❏ Artificial Intelligence Engineer <br />
             ♮ ₫rummer
             <br />∯ Time is still the infinite jest
           </p>
