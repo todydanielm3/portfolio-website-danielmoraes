@@ -141,7 +141,7 @@ const Home = () => (
         </BioSection>
 
         <BioSection>
-          <BioYear>2022 - 2023</BioYear>
+          <BioYear>2022 - 2024</BioYear>
           Membro do Grupo de Pesquisa em Reconhecimento Facial BiTGroup da
           UnB/CIC, atuando em aprendizado profundo de máquina supervisionado
           para aplicações forenses e criminalísticas.
@@ -151,8 +151,20 @@ const Home = () => (
           <Heading as="h3" variant="section-title">
             Experiências Profissionais
           </Heading>
+            <BioSection>
+            <BioYear>2/2024 - Present</BioYear>
+             Engenheiro de IA Deep Learning - WaveLight Health Technologies
+               <br />
+              Google Inception V3 | Engenheiro de IA especializado em Deep Learning, atuando na análise de sinais vitais através de PPG remoto. 
+              Colaborando para a construção de infraestrutura backend, pipelines de dados e modelos de deep learning para produtos suportados por IA. 
+                Identificação de oportunidades inovadoras para aplicação de IA em diferentes áreas do produto, e implementar novos recursos para resolver problemas complexos em análise de sinaisEngenheiro de IA especializado em Deep Learning, atuando na análise de sinais vitais através de PPG remoto. 
+              Colaborando para a construção de infraestrutura backend, pipelines de dados e modelos de deep learning para produtos suportados por IA. Identificação de oportunidades inovadoras para aplicação de IA em diferentes áreas do produto, 
+                e implementar novos recursos para resolver problemas complexos em análise de sinais
+
+          </BioSection>
+
              <BioSection>
-            <BioYear>2024 - Present</BioYear>
+            <BioYear>2024 - 2/2024</BioYear>
              Analista de Integração de Dados em Atenção Primária à Saúde na operadora Postal Saúde. Atuando na estruturação, 
                análise e integração de dados de saúde para melhorar a qualidade e a eficiência dos serviços da saúde primária.
           </BioSection>
