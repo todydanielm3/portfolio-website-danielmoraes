@@ -91,7 +91,7 @@ const Home = () => (
           Computação da Universidade de Brasília. Especializado em Visão
           Computacional e Computação em Nuvem, possuo uma sólida experiência em
           segurança e infraestrutura de redes, atuando atualmente como
-          Engenheiro de Dados. Meu conhecimento abrange, IAs (Deep learning),
+          Engenheiro de IA. Meu conhecimento abrange, IAs (Deep learning),
           processamento de dados, desenvolvimento em nuvem, desenvolvimento web,
           automação de redes, e domínio de linguagens e ferramentas como Python,
           JavaScript/Node.js, C, Assembly e AWS Serverless. Construindo uma
