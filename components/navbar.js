@@ -17,7 +17,7 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
-import { IoLogoGithub } from 'react-icons/io5'
+import { IoLogoGithub, IoCameraOutline } from 'react-icons/io5'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
@@ -59,7 +59,7 @@ const Navbar = props => {
         display="flex"
         p={2}
         maxW="container.md"
-        wrap="wrap"
+        flexWrap="wrap"
         align="center"
         justify="space-between"
       >
@@ -78,7 +78,7 @@ const Navbar = props => {
           mt={{ base: 4, md: 0 }}
         >
           <LinkItem href="/works" path={path}>
-            Works
+            Publicações
           </LinkItem>
           <LinkItem
             target="_blank"
@@ -86,15 +86,27 @@ const Navbar = props => {
             path={path}
             display="inline-flex"
             alignItems="center"
-            style={{ gap: 4 }}
+            gap={4}
             pl={2}
           >
             <IoLogoGithub />
             GitHub
           </LinkItem>
+          <LinkItem
+            target="_blank"
+            href="https://daniel8moraess.myportfolio.com/"
+            path={path}
+            display="inline-flex"
+            alignItems="center"
+            gap={4}
+            pl={2}
+          >
+            <IoCameraOutline />
+            Portfólio
+          </LinkItem>
         </Stack>
 
-        <Box flex={1} align="right">
+        <Box flex={1} textAlign="right">
           <ThemeToggleButton />
 
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
@@ -119,7 +131,13 @@ const Navbar = props => {
                   as={Link}
                   href="https://letterboxd.com/daniel_8moraes/"
                 >
-                  Meu Letterboxd
+                  Letterboxd
+                </MenuItem>
+                <MenuItem
+                  as={Link}
+                  href="https://daniel8moraess.myportfolio.com/"
+                >
+                  Fotografia
                 </MenuItem>
               </MenuList>
             </Menu>
