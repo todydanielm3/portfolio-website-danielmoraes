@@ -102,7 +102,7 @@ const Navbar = props => {
             pl={2}
           >
             <IoCameraOutline />
-            Portfólio
+            Fotografia
           </LinkItem>
         </Stack>
 
