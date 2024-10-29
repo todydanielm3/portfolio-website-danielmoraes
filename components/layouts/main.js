@@ -24,7 +24,7 @@ const Main = ({ children, router }) => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@DanielMoraes_S" />
         <meta name="twitter:creator" content="@craftzdog" />
-        <meta name="twitter:image" content="https://www.craftz.dog/card.png" />
+        <meta name="twitter:image" content="https://github.com/todydanielm3" />
         <meta property="og:site_name" content="Daniel Moraes" />
         <meta name="og:title" content="Daniel Moraes" />
         <meta property="og:type" content="website" />
