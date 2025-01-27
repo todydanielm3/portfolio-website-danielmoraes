@@ -151,16 +151,20 @@ const Home = () => (
           <Heading as="h3" variant="section-title">
             Experiências Profissionais
           </Heading>
+
             <BioSection>
-            <BioYear>2/2024 - Present</BioYear>
+            <BioYear>2025</BioYear>
+             Artificial Intelligence Engineer <br/>Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH<br/>
+              Development and implementation of Deep Learning/Machine Learning models and predictive solutions that optimize the audit process in sustainable infrastructure.
+          </BioSection>
+            
+            <BioSection>
+            <BioYear>2/2024</BioYear>
              Engenheiro de IA Deep Learning<br/>WaveLight Health Technologies<br/>
           |Google Inception V3|<br/> 
             Engenheiro de IA especializado em Deep Learning, atuando na análise de sinais vitais através de PPG remoto. 
               Colaborando para a construção de infraestrutura backend, pipelines de dados e modelos de deep learning para produtos suportados por IA. 
-                Identificação de oportunidades inovadoras para aplicação de IA em diferentes áreas do produto, e implementar novos recursos para resolver problemas complexos em análise de sinaisEngenheiro de IA especializado em Deep Learning, atuando na análise de sinais vitais através de PPG remoto. 
-              Colaborando para a construção de infraestrutura backend, pipelines de dados e modelos de deep learning para produtos suportados por IA. Identificação de oportunidades inovadoras para aplicação de IA em diferentes áreas do produto, 
-                e implementar novos recursos para resolver problemas complexos em análise de sinais
-
+                Identificação de oportunidades inovadoras para aplicação de IA em diferentes áreas do produto, e implementar novos recursos para resolver problemas complexos em análise de sinais.
           </BioSection>
 
              <BioSection>
