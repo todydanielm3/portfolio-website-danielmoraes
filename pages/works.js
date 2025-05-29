@@ -1,28 +1,20 @@
-// Importações de Componentes e Estilos do Chakra UI
+// pages/works.tsx  (ou pages/index.tsx)
+// ─────────────────────────────────────────────────────────
 import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
-
-// Importações de Componentes Personalizados
-import Layout from '../components/layouts/article'
-import Section from '../components/section'
+import Layout    from '../components/layouts/article'
+import Section   from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
-// Importações de Imagens
-import thumbInkdrop from '../public/images/works/degrada.png'
-import thumbWalknote from '../public/images/works/processa.png'
-import thumbFourPainters from '../public/images/works/dash.png'
-import thumbPichu2 from '../public/images/works/m1.png'
-import thumbWalknote1 from '../public/images/works/deepface-icon.png'
-import thumbWalknote2 from '../public/images/works/haskell.png'
+// ─── Imagens ─────────────────────────────────────────────
+import thumbBuscador   from '../public/images/works/buscador.png'      //  ← NOVO
+import thumbInkdrop    from '../public/images/works/degrada.png'
+import thumbWalknote   from '../public/images/works/processa.png'
+import thumbDash       from '../public/images/works/dash.png'
+import thumbM1         from '../public/images/works/m1.png'
+import thumbDeep       from '../public/images/works/deepface-icon.png'
+import thumbHaskell    from '../public/images/works/haskell.png'
 
-// Comentários para futuras importações de imagens
-// import thumbMenkiki from '../public/images/works/menkiki_eyecatch.png';
-// import thumbMargelo from '../public/images/works/margelo_eyecatch.png';
-// import thumbModeTokyo from '../public/images/works/modetokyo_eyecatch.png';
-// import thumbStyly from '../public/images/works/styly_eyecatch.png';
-// import thumbFreeDBTagger from '../public/images/works/freedbtagger_eyecatch.png';
-// import thumbAmembo from '../public/images/works/amembo_eyecatch.png';
-
-// Componente Works
+// ─── Componente ──────────────────────────────────────────
 const Works = () => (
   <Layout title="Works">
     <Container>
@@ -30,137 +22,139 @@ const Works = () => (
         Works
       </Heading>
 
-      {/* Grid para Projetos Gerais */}
+      {/* ───────────────────── Projetos em Destaque ───────────────────── */}
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
-        <Section>
+        {/* 1) Buscador Inteligente (NOVO) */}
+        <Section delay={0.1}>
+          <WorkGridItem
+            id="buscadores"
+            title="Buscador Inteligente"
+            thumbnail={thumbBuscador}
+            link="https://adaptainfra.streamlit.app"
+          >
+            Plataforma em&nbsp;Streamlit que integra pesquisas na OpenAlex,
+            Biblioteca OLACEFS e documentos do IDI, além de buscador de
+            especialistas e chatbot Gemini.
+          </WorkGridItem>
+        </Section>
+
+        {/* 2) Gerador de Degradações */}
+        <Section delay={0.1}>
           <WorkGridItem
             id="labdegrad"
             title="Gerador de Degradações em Python"
             thumbnail={thumbInkdrop}
           >
-            Laboratorio de geração e análise de degradações de imagens
-          </WorkGridItem>
-        </Section>
-        <Section>
-          <WorkGridItem
-            id="Processamento de Imagens em Haskell"
-            title="Processamento de Imagens em Haskell"
-            thumbnail={thumbWalknote2}
-            Link="https://github.com/todydanielm3/projeto_haskell"
-          >
-            Implementação de filtros de imagens em Haskell.Projeto Haskell de
-            Filtro Gaussiano: projeto em Haskell utiliza a biblioteca
-            JuicyPixels para aplicar um filtro Gaussiano em imagens.
-            exemplo básico de processamento de imagens usando Haskell.
+            Laboratório para geração&nbsp;/ análise de degradações de imagens.
           </WorkGridItem>
         </Section>
 
-        <Section>
+        {/* 3) Filtros em Haskell */}
+        <Section delay={0.2}>
+          <WorkGridItem
+            id="haskell-imagens"
+            title="Processamento de Imagens em Haskell"
+            thumbnail={thumbHaskell}
+            link="https://github.com/todydanielm3/projeto_haskell"
+          >
+            Implementação de filtros (Gauss, etc.) usando JuicyPixels.
+          </WorkGridItem>
+        </Section>
+
+        {/* 4) Processamento PY */}
+        <Section delay={0.2}>
           <WorkGridItem
             id="imageprocessing"
             title="image_processing_PY"
             thumbnail={thumbWalknote}
           >
-            Processamento de Imagens em Python - Geração de degradaçoes em
-            Imagens para prototipaçoes em machine learning
-          </WorkGridItem>
-        </Section>
-        <Section>
-          <WorkGridItem
-            id="dash_aws"
-            title="Dashboards -> Dash/AWS"
-            thumbnail={thumbFourPainters}
-          >
-            Analise de dados da saúde pública e Criação de dashboards em python
-            usando Dash + Plotly combinando praticas de implementação em nuvem
-            usando os serviços da AWS.
-          </WorkGridItem>
-        </Section>
-        <Section>
-          <WorkGridItem
-            id="DeepFace_RecFac"
-            title="DeepFace_RecFac"
-            thumbnail={thumbWalknote1}
-            link="https://github.com/todydanielm3/deepface_recfac_deg"
-          >
-            Modelos de Reconhecimento Facial baseado em Aprendizado Profundo
+            Geração de degradações para prototipagem em ML.
           </WorkGridItem>
         </Section>
 
-        <Section>
+        {/* 5) Dash / AWS */}
+        <Section delay={0.3}>
+          <WorkGridItem
+            id="dash_aws"
+            title="Dashboards → Dash/AWS"
+            thumbnail={thumbDash}
+          >
+            Saúde pública: análise e Dash + Plotly em nuvem (AWS).
+          </WorkGridItem>
+        </Section>
+
+        {/* 6) DeepFace */}
+        <Section delay={0.3}>
+          <WorkGridItem
+            id="deepface"
+            title="DeepFace RecFac"
+            thumbnail={thumbDeep}
+            link="https://github.com/todydanielm3/deepface_recfac_deg"
+          >
+            Modelos de reconhecimento facial baseados em Deep Learning.
+          </WorkGridItem>
+        </Section>
+
+        {/* 7) Redes / Sockets */}
+        <Section delay={0.4}>
           <WorkGridItem
             id="redes"
-            title="Implementação de Redes de Comunicação  em Python"
+            title="Redes de Comunicação em Python"
             thumbnail={thumbWalknote}
           >
-            Implementação de Redes de comunicação ponto a ponto utilizando
-            Socket em Python
+            Implementação P2P utilizando Socket.
           </WorkGridItem>
         </Section>
-        <Section>
+
+        {/* 8) Invoices Automation */}
+        <Section delay={0.4}>
           <WorkGridItem
-            id="Invoices-Automation"
-            title="Invoices-Automation"
+            id="invoices"
+            title="Invoices Automation"
             thumbnail={thumbWalknote}
           >
-            Automatização de extração de dados em Faturas Bancárias. Essa
-            aplicação recebe um arquivo de fatura bancária em formato PDF,
-            extrai as informações relevantes e retorna as informações filtradas
-            em formato CSV e Json.
+            Extração de dados de faturas bancárias (PDF → CSV/JSON).
           </WorkGridItem>
         </Section>
-        <Section>
+
+        {/* 9) Pysus */}
+        <Section delay={0.5}>
           <WorkGridItem
-            id="Pysus-Instituto de Gestão da Saude"
-            title="Pysus-Instituto de Gestão da Saude"
+            id="pysus"
+            title="Pysus – Instituto de Gestão da Saúde"
             thumbnail={thumbWalknote}
           >
-            Extração de dados da saúde publica
+            Coleta e análise de dados públicos da saúde.
           </WorkGridItem>
-        </Section>
-        <Section>
-          <WorkGridItem
-            id="Financial dashboard - DFC"
-            title="Financial dashboard - DFC"
-            thumbnail={thumbWalknote}
-          ></WorkGridItem>
-        </Section>
-        <Section>
-          <WorkGridItem
-            id="Financial dashboard - QDD"
-            title="Financial dashboard - QDD"
-            thumbnail={thumbWalknote}
-          ></WorkGridItem>
         </Section>
       </SimpleGrid>
 
-      {/* Seção para Trabalhos de Segurança */}
+      {/* ───────────────────── Seção Security ─────────────────────────── */}
       <Section>
-        <Divider my={6} />
+        <Divider my={8} />
         <Heading as="h3" fontSize={20} mb={4}>
           Security Works
         </Heading>
       </Section>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
-        <Section>
+        <Section delay={0.1}>
           <WorkGridItem
             id="arm"
-            thumbnail={thumbPichu2}
-            title="M1 assembly Apple Silicon"
+            thumbnail={thumbM1}
+            title="M1 Assembly – Apple Silicon"
           >
-            Implementação da Cifra de Vigenere em Assembly. Novos testes para
-            nova familia de processadores da Apple / Maquina local (M1)
+            Implementação da cifra de Vigenère em Assembly (M1).
           </WorkGridItem>
         </Section>
 
-        <Section>
+        <Section delay={0.2}>
           <WorkGridItem
-            id="Python Security"
+            id="python-security"
             thumbnail={thumbWalknote}
             title="Python Security"
           >
-            Implementação de ferramentas de segurança em Python
+            Ferramentas de segurança ofensiva em Python.
           </WorkGridItem>
         </Section>
       </SimpleGrid>
