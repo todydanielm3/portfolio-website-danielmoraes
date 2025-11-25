@@ -153,6 +153,18 @@ const Home = () => (
           </Heading>
 
             <BioSection>
+            <BioYear>Sep/2025 - Present</BioYear>
+             Senior AI Engineer<br/>triggo.ai<br/>
+              I work on the development and implementation of cutting-edge Artificial Intelligence solutions, focusing on LLMs, RAG, autonomous agents, computer vision, and deep learning.
+              My responsibilities include: designing and implementing RAG architectures and agent workflows for enterprise-scale applications; 
+              developing computer vision and natural language processing models integrated into business pipelines; 
+              leading technical decisions in strategic projects, translating business requirements into robust and scalable cloud solutions (Azure, AWS, GCP); 
+              working closely with multidisciplinary teams to deliver agile, secure, and ROI-driven AI products; 
+              supporting technical mentoring of the team and promoting best practices in ML/AI, MLOps, and data governance. 
+              Currently, I work on fraud detection and intelligent automation projects for large enterprises, combining generative AI, multimodal analysis, and explainability to generate direct impact on efficiency, security, and decision-making.
+          </BioSection>
+
+            <BioSection>
             <BioYear>2025</BioYear>
              Artificial Intelligence Engineer <br/>Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH<br/>
               Development and implementation of Deep Learning/Machine Learning models and predictive solutions that optimize the audit process in sustainable infrastructure.
