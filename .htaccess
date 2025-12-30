@@ -5,3 +5,9 @@ PassengerAppType node
 PassengerStartupFile server.js
 PassengerNodejs /opt/alt/alt-nodejs22/root/usr/bin/node
 PassengerAppEnv production
+
+# Proxy all requests to Node.js
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ http://localhost:3000/$1 [P,L]
