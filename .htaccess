@@ -1,6 +1,7 @@
 # Hostinger Node.js configuration
 PassengerEnabled on
-PassengerAppRoot /home/u971819315/domains/daniel8moraes.com/public_html
+PassengerAppRoot /home/u204926461/domains/daniel8moraes.com/public_html
 PassengerAppType node
 PassengerStartupFile server.js
-PassengerNodejs /usr/bin/node
+PassengerNodejs /opt/alt/alt-nodejs22/root/usr/bin/node
+PassengerAppEnv production
