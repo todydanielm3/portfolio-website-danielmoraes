@@ -85,19 +85,16 @@ const Home = () => (
           Saudações!
         </Heading>
         <Paragraph style={{ textAlign: 'center', margin: 0 }}>
-          Engenheiro de Computação, com ampla experiência em Reconhecimento
-          Facial baseado em Inteligência Artificial e membro do grupo de
-          pesquisa em reconhecimento facial do Departamento de Ciência da
-          Computação da Universidade de Brasília. Especializado em Visão
-          Computacional e Computação em Nuvem, possuo uma sólida experiência em
-          segurança e infraestrutura de redes, atuando atualmente como
-          Engenheiro de IA. Meu conhecimento abrange, IAs (Deep learning),
-          processamento de dados, desenvolvimento em nuvem, desenvolvimento web,
-          automação de redes, e domínio de linguagens e ferramentas como Python,
-          JavaScript/Node.js, C, Assembly e AWS Serverless. Construindo uma
-          carreira marcada pelo compromisso com a inovação e a aplicação de
-          tecnologias de ponta em soluções práticas e eficientes.Compartilho um
-          pouco da minha vidal pessoal em{' '}
+          Engenheiro de IA Sênior com formação em Engenharia de Computação pela Universidade de Brasília (UnB), 
+          onde integrei o grupo de pesquisa em reconhecimento facial do Departamento de Ciência da Computação. 
+          Especializado em Large Language Models (LLMs), arquiteturas RAG, agentes autônomos, visão computacional 
+          e deep learning, atuo na concepção e implementação de soluções de inteligência artificial de ponta para 
+          aplicações corporativas em larga escala. Minha expertise abrange desde o desenvolvimento de modelos de 
+          processamento de linguagem natural e visão computacional integrados a pipelines de negócio, até a liderança 
+          técnica em projetos estratégicos envolvendo cloud computing (Azure, AWS, GCP), MLOps e governança de dados. 
+          Atualmente, dedico-me a projetos de detecção de fraudes e automação inteligente, combinando IA generativa, 
+          análise multimodal e explainability para gerar impacto direto em eficiência, segurança e tomada de decisão. 
+          Compartilho um pouco da minha vida pessoal em{' '}
           <Link
             as={NextLink}
             href="https://www.instagram.com/daniel_8moraes/"

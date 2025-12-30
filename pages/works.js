@@ -13,6 +13,15 @@ import thumbDash       from '../public/images/works/dash.png'
 import thumbM1         from '../public/images/works/m1.png'
 import thumbDeep       from '../public/images/works/deepface-icon.png'
 import thumbHaskell    from '../public/images/works/haskell.png'
+// ─── Novos Projetos de IA ───────────────────────────────
+import thumbRAG        from '../public/images/works/rag-system.png'
+import thumbAgent      from '../public/images/works/agent.png'
+import thumbFraud      from '../public/images/works/fraud.png'
+import thumbChatbot    from '../public/images/works/chatbot.png'
+import thumbMLOps      from '../public/images/works/mlops.png'
+import thumbTransformers from '../public/images/works/transformers.png'
+import thumbCVPipeline from '../public/images/works/cv-pipeline.png'
+import thumbDSPlatform from '../public/images/works/ds-platform.png'
 
 // ─── Componente ──────────────────────────────────────────
 const Works = () => (
@@ -22,7 +31,119 @@ const Works = () => (
         Works
       </Heading>
 
+      {/* ───────────────────── Projetos de IA/ML ─────────────────────── */}
+      <Section>
+        <Heading as="h4" fontSize={18} mb={3} color="teal.400">
+          🤖 Inteligência Artificial & Machine Learning
+        </Heading>
+      </Section>
+
+      <SimpleGrid columns={[1, 1, 2]} gap={6}>
+        {/* Sistema RAG */}
+        <Section delay={0.1}>
+          <WorkGridItem
+            id="rag-system"
+            title="Sistema RAG com LLMs"
+            thumbnail={thumbRAG}
+          >
+            Retrieval Augmented Generation com embeddings vetoriais, LangChain e GPT-4.
+            Busca semântica e respostas contextualizadas.
+          </WorkGridItem>
+        </Section>
+
+        {/* Agente Autônomo */}
+        <Section delay={0.1}>
+          <WorkGridItem
+            id="autonomous-agent"
+            title="Agente Autônomo de IA"
+            thumbnail={thumbAgent}
+          >
+            Agente inteligente com arquitetura ReAct, planejamento automático e
+            integração com ferramentas externas usando LangChain.
+          </WorkGridItem>
+        </Section>
+
+        {/* Detecção de Fraudes */}
+        <Section delay={0.2}>
+          <WorkGridItem
+            id="fraud-detection"
+            title="Detecção de Fraudes ML"
+            thumbnail={thumbFraud}
+          >
+            Deep learning para detecção de fraudes em tempo real. Neural Networks,
+            ensemble models, processamento de 10k+ transações/segundo.
+          </WorkGridItem>
+        </Section>
+
+        {/* Chatbot Multimodal */}
+        <Section delay={0.2}>
+          <WorkGridItem
+            id="multimodal-chatbot"
+            title="Chatbot Multimodal"
+            thumbnail={thumbChatbot}
+          >
+            Chatbot com GPT-4 Vision para processar texto e imagens simultaneamente.
+            Análise visual, OCR e detecção de objetos.
+          </WorkGridItem>
+        </Section>
+
+        {/* Pipeline MLOps */}
+        <Section delay={0.3}>
+          <WorkGridItem
+            id="mlops-pipeline"
+            title="Pipeline MLOps Completo"
+            thumbnail={thumbMLOps}
+          >
+            Infraestrutura MLOps com MLflow, DVC, Airflow, CI/CD para ML,
+            monitoramento em produção e retreinamento automático.
+          </WorkGridItem>
+        </Section>
+
+        {/* Fine-Tuning Transformers */}
+        <Section delay={0.3}>
+          <WorkGridItem
+            id="transformers-finetuning"
+            title="Fine-Tuning de Transformers"
+            thumbnail={thumbTransformers}
+          >
+            Fine-tuning de BERT, GPT, T5 com LoRA/QLoRA. Otimização PEFT para
+            modelos grandes em hardware limitado.
+          </WorkGridItem>
+        </Section>
+
+        {/* Computer Vision Pipeline */}
+        <Section delay={0.4}>
+          <WorkGridItem
+            id="computer-vision-pipeline"
+            title="Pipeline Visão Computacional"
+            thumbnail={thumbCVPipeline}
+          >
+            YOLO, Mask R-CNN, detecção em tempo real. 60+ FPS em edge devices,
+            otimização com TensorRT e ONNX.
+          </WorkGridItem>
+        </Section>
+
+        {/* Data Science Platform */}
+        <Section delay={0.4}>
+          <WorkGridItem
+            id="datascience-platform"
+            title="Plataforma Data Science"
+            thumbnail={thumbDSPlatform}
+          >
+            Plataforma completa: ETL, dashboards interativos (Dash/Streamlit),
+            notebooks colaborativos e APIs ML.
+          </WorkGridItem>
+        </Section>
+      </SimpleGrid>
+
       {/* ───────────────────── Projetos em Destaque ───────────────────── */}
+      <Section>
+        <Divider my={8} />
+        <Heading as="h4" fontSize={18} mb={3}>
+          💼 Projetos Profissionais
+        </Heading>
+      </Section>
+
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         {/* 1) Buscador Inteligente (NOVO) */}
         <Section delay={0.1}>
@@ -132,8 +253,8 @@ const Works = () => (
       {/* ───────────────────── Seção Security ─────────────────────────── */}
       <Section>
         <Divider my={8} />
-        <Heading as="h3" fontSize={20} mb={4}>
-          Security Works
+        <Heading as="h4" fontSize={18} mb={3}>
+          🔐 Security & Low-Level
         </Heading>
       </Section>
 
