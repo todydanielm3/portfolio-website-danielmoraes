@@ -1,13 +1,25 @@
-# Hostinger Node.js configuration
+# Disable directory browsing
+Options -Indexes
+
+# Apache Configuration for Node.js App
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  
+  # Don't rewrite files or directories
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+  
+  # Proxy all other requests to Node.js on port 3000
+  RewriteRule ^(.*)$ http://127.0.0.1:3000/$1 [P,L]
+</IfModule>
+
+# Enable Passenger for Node.js
 PassengerEnabled on
 PassengerAppRoot /home/u204926461/domains/daniel8moraes.com/public_html
 PassengerAppType node
 PassengerStartupFile server.js
 PassengerNodejs /opt/alt/alt-nodejs22/root/usr/bin/node
 PassengerAppEnv production
-
-# Proxy all requests to Node.js
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ http://localhost:3000/$1 [P,L]
+PassengerFriendlyErrorPages off
