@@ -28,6 +28,10 @@ yarn-error.log*
 # vercel
 .vercel
 
+# build artifacts
+next-build.tar.gz
+update-server.sh
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
