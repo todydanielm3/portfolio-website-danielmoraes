@@ -11,6 +11,7 @@ function easeOutCirc(x) {
 const VoxelDog = () => {
   const refContainer = useRef()
   const [loading, setLoading] = useState(true)
+  const [hasError, setHasError] = useState(false)
   const refRenderer = useRef()
   const urlDogGLB = '/dog.glb'
 
@@ -34,10 +35,11 @@ const VoxelDog = () => {
       const scH = container.clientHeight
 
       const renderer = new THREE.WebGLRenderer({
-        antialias: true,
-        alpha: true
+        antialias: false, // Desligar antialiasing para melhor performance
+        alpha: true,
+        powerPreference: 'low-power' // Usar menos recursos
       })
-      renderer.setPixelRatio(window.devicePixelRatio)
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2)) // Limitar pixel ratio
       renderer.setSize(scW, scH)
       renderer.outputEncoding = THREE.sRGBEncoding
       container.appendChild(renderer.domElement)
@@ -77,6 +79,10 @@ const VoxelDog = () => {
         castShadow: false
       }).then(() => {
         animate()
+        setLoading(false)
+      }).catch((error) => {
+        console.error('Failed to load 3D model:', error)
+        setHasError(true)
         setLoading(false)
       })
 
@@ -120,7 +126,10 @@ const VoxelDog = () => {
   }, [handleWindowResize])
 
   return (
-    <DogContainer ref={refContainer}>{loading && <DogSpinner />}</DogContainer>
+    <DogContainer ref={refContainer}>
+      {loading && <DogSpinner />}
+      {hasError && <div style={{textAlign: 'center', padding: '20px'}}>Failed to load 3D model</div>}
+    </DogContainer>
   )
 }
 
