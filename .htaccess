@@ -1,25 +1,40 @@
 # Disable directory browsing
 Options -Indexes
 
-# Apache Configuration for Node.js App
-<IfModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteBase /
-  
-  # Don't rewrite files or directories
-  RewriteCond %{REQUEST_FILENAME} -f [OR]
-  RewriteCond %{REQUEST_FILENAME} -d
-  RewriteRule ^ - [L]
-  
-  # Proxy all other requests to Node.js on port 3000
-  RewriteRule ^(.*)$ http://127.0.0.1:3000/$1 [P,L]
-</IfModule>
-
-# Enable Passenger for Node.js
+# ========================================
+# Passenger Configuration (Node.js)
+# ========================================
+# Passenger manages the Node.js process automatically.
+# Do NOT use RewriteRule [P] proxy together with Passenger - they conflict!
 PassengerEnabled on
 PassengerAppRoot /home/u204926461/domains/daniel8moraes.com/public_html
 PassengerAppType node
 PassengerStartupFile server.js
 PassengerNodejs /opt/alt/alt-nodejs22/root/usr/bin/node
 PassengerAppEnv production
-PassengerFriendlyErrorPages off
+PassengerFriendlyErrorPages on
+
+# ========================================
+# Static file caching
+# ========================================
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/png "access plus 1 month"
+  ExpiresByType image/jpg "access plus 1 month"
+  ExpiresByType image/jpeg "access plus 1 month"
+  ExpiresByType image/gif "access plus 1 month"
+  ExpiresByType image/svg+xml "access plus 1 month"
+  ExpiresByType image/webp "access plus 1 month"
+  ExpiresByType image/x-icon "access plus 1 month"
+  ExpiresByType text/css "access plus 1 week"
+  ExpiresByType application/javascript "access plus 1 week"
+  ExpiresByType application/x-javascript "access plus 1 week"
+  ExpiresByType model/gltf-binary "access plus 1 month"
+</IfModule>
+
+# ========================================
+# Compression
+# ========================================
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json
+</IfModule>
