@@ -17,7 +17,7 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
-import { IoLogoGithub, IoCameraOutline } from 'react-icons/io5'
+import { IoLogoGithub, IoMailOutline } from 'react-icons/io5'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
@@ -78,7 +78,7 @@ const Navbar = props => {
           mt={{ base: 4, md: 0 }}
         >
           <LinkItem href="/works" path={path}>
-            Publicações
+            Soluções
           </LinkItem>
           <LinkItem
             target="_blank"
@@ -93,16 +93,15 @@ const Navbar = props => {
             GitHub
           </LinkItem>
           <LinkItem
-            target="_blank"
-            href="https://daniel8moraess.myportfolio.com/"
+            href="mailto:daniel8moraess@gmail.com"
             path={path}
             display="inline-flex"
             alignItems="center"
             gap={4}
             pl={2}
           >
-            <IoCameraOutline />
-            Fotografia
+            <IoMailOutline />
+            Contato
           </LinkItem>
         </Stack>
 
@@ -119,25 +118,16 @@ const Navbar = props => {
               />
               <MenuList>
                 <MenuItem as={MenuLink} href="/">
-                  Quem sou eu?
+                  Daniel Moraes AI
                 </MenuItem>
                 <MenuItem as={MenuLink} href="/works">
-                  Publicações
+                  Soluções
                 </MenuItem>
                 <MenuItem as={Link} href="https://github.com/todydanielm3">
-                  Visite meu GitHub <IoLogoGithub />
+                  GitHub <IoLogoGithub />
                 </MenuItem>
-                <MenuItem
-                  as={Link}
-                  href="https://letterboxd.com/daniel_8moraes/"
-                >
-                  Letterboxd
-                </MenuItem>
-                <MenuItem
-                  as={Link}
-                  href="https://daniel8moraess.myportfolio.com/"
-                >
-                  Fotografia
+                <MenuItem as={Link} href="mailto:daniel8moraess@gmail.com">
+                  Contato
                 </MenuItem>
               </MenuList>
             </Menu>

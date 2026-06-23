@@ -15,20 +15,20 @@ const Main = ({ children, router }) => {
     <Box as="main" pb={8}>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Daniel Moraes homepage" />
+        <meta name="description" content="Daniel Moraes — Engenharia e Consultoria em Inteligência Artificial. LLMs, RAG, Agentes Autônomos, Visão Computacional e MLOps para o mercado corporativo." />
         <meta name="author" content="Daniel Moraes" />
         <meta name="author" content="daniel8moraes" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-        <meta name="twitter:title" content="Daniel Moraes" />
+        <meta name="twitter:title" content="Daniel Moraes — AI Engineering & Consulting" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@DanielMoraes_S" />
-        <meta name="twitter:creator" content="@craftzdog" />
+        <meta name="twitter:creator" content="@DanielMoraes_S" />
         <meta name="twitter:image" content="https://github.com/todydanielm3" />
-        <meta property="og:site_name" content="Daniel Moraes" />
-        <meta name="og:title" content="Daniel Moraes" />
+        <meta property="og:site_name" content="Daniel Moraes — AI Engineering" />
+        <meta name="og:title" content="Daniel Moraes — AI Engineering & Consulting" />
         <meta property="og:type" content="website" />
-        <title>Daniel Moraes - Homepage</title>
+        <title>Daniel Moraes — AI Engineering & Consulting</title>
       </Head>
 
       <NavBar path={router.asPath} />
