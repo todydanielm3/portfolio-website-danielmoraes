@@ -37,9 +37,15 @@ const ServiceCard = ({ icon, title, description }) => {
       borderColor={border}
       css={{ backdropFilter: 'blur(5px)' }}
     >
-      <Text fontSize="2xl" mb={2}>{icon}</Text>
-      <Heading as="h4" size="sm" mb={2}>{title}</Heading>
-      <Text fontSize="sm" opacity={0.8}>{description}</Text>
+      <Text fontSize="2xl" mb={2}>
+        {icon}
+      </Text>
+      <Heading as="h4" size="sm" mb={2}>
+        {title}
+      </Heading>
+      <Text fontSize="sm" opacity={0.8}>
+        {description}
+      </Text>
     </Box>
   )
 }
@@ -68,7 +74,8 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Engenharia e Consultoria em Inteligência Artificial
+        Até então, continuamos sendo um fenômeno raro no universo <br />
+        ヽ(⌐■_■)ノ
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -76,9 +83,7 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Daniel Moraes
           </Heading>
-          <p>
-            Senior AI Engineer · LLMs · Agentes · RAG · MLOps
-          </p>
+          <p>Senior AI Engineer · LLMs · Agentes · RAG · MLOps</p>
         </Box>
         <Box
           flexShrink={0}
@@ -112,15 +117,15 @@ const Home = () => (
           Sobre
         </Heading>
         <Text mb={4}>
-          Engenheiro de Computação formado pela Universidade de Brasília (UnB)
-          e especialista em desenvolvimento de soluções de Inteligência
-          Artificial para ambientes corporativos.
+          Engenheiro de Computação formado pela Universidade de Brasília (UnB) e
+          especialista em desenvolvimento de soluções de Inteligência Artificial
+          para ambientes corporativos.
         </Text>
         <Text mb={4}>
-          Nos últimos anos, tenho atuado ajudando empresas a transformar
-          grandes volumes de dados, documentos e processos operacionais em
-          sistemas inteligentes capazes de apoiar decisões, automatizar tarefas
-          e gerar ganhos reais de produtividade.
+          Nos últimos anos, tenho atuado ajudando empresas a transformar grandes
+          volumes de dados, documentos e processos operacionais em sistemas
+          inteligentes capazes de apoiar decisões, automatizar tarefas e gerar
+          ganhos reais de produtividade.
         </Text>
         <Text mb={4}>
           Minha experiência vai além do desenvolvimento de modelos. Trabalho na
@@ -141,7 +146,9 @@ const Home = () => (
           seja modernizando operações, acelerando processos ou criando novos
           produtos baseados em Inteligência Artificial.
         </Text>
-        <Text fontWeight="semibold" mb={2}>Áreas de atuação:</Text>
+        <Text fontWeight="semibold" mb={2}>
+          Áreas de atuação:
+        </Text>
         <List spacing={1} mb={2}>
           {[
             'IA Generativa e Agentes Inteligentes',
@@ -153,7 +160,9 @@ const Home = () => (
             'MLOps e LLMOps',
             'Azure, AWS e Google Cloud'
           ].map(area => (
-            <ListItem key={area} fontSize="sm">• {area}</ListItem>
+            <ListItem key={area} fontSize="sm">
+              • {area}
+            </ListItem>
           ))}
         </List>
         <Box align="center" my={4}>
@@ -213,11 +222,30 @@ const Home = () => (
         </Heading>
         <Wrap spacing={2}>
           {[
-            'Python', 'PyTorch', 'TensorFlow', 'LangChain', 'LangGraph',
-            'OpenAI API', 'Azure OpenAI', 'Hugging Face', 'FastAPI',
-            'MLflow', 'Airflow', 'Docker', 'Kubernetes',
-            'Azure', 'AWS', 'GCP', 'PostgreSQL', 'ChromaDB', 'Pinecone',
-            'YOLO', 'BERT', 'GPT-4', 'Llama', 'Mistral'
+            'Python',
+            'PyTorch',
+            'TensorFlow',
+            'LangChain',
+            'LangGraph',
+            'OpenAI API',
+            'Azure OpenAI',
+            'Hugging Face',
+            'FastAPI',
+            'MLflow',
+            'Airflow',
+            'Docker',
+            'Kubernetes',
+            'Azure',
+            'AWS',
+            'GCP',
+            'PostgreSQL',
+            'ChromaDB',
+            'Pinecone',
+            'YOLO',
+            'BERT',
+            'GPT-4',
+            'Llama',
+            'Mistral'
           ].map(tech => (
             <WrapItem key={tech}>
               <TechBadge>{tech}</TechBadge>
